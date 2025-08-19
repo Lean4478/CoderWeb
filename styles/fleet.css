@@ -38,9 +38,73 @@ nav a {
 }
 
 .autos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
 
+.auto {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.auto.reverse {
+  flex-direction: row-reverse;
+}
+
+.auto img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.specs {
+  flex: 1;
+  background: #f8f8f8;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+
+.specs h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212529;
+}
+
+.specs ul {
+  margin: 0;
+  padding-left: 18px; 
+  list-style: none; 
+}
+
+.specs ul li {
+  margin: 8px 0;
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+.btn-reservar {
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background: rgb(161, 235, 70); /* Verde GoAuto */
+  color: #2a2a2a;
+  transition: filter .2s ease;
+}
+.btn-reservar:hover { filter: brightness(0.95); }
+
+
+footer {
+    background-color: rgb(161, 235, 70);
+    padding: 20px 0;
 }
 
 .pie-pagina {
@@ -64,4 +128,14 @@ nav a {
 
 .redes-sociales img {
     height: 5vh;
+}
+
+@media (max-width: 992px) {
+  .auto img { max-width: 48%; }
+}
+
+@media (max-width: 768px) {
+  .auto, .auto.reverse { flex-direction: column; }
+  .auto img { max-width: 100%; }
+  .specs { width: 100%; }
 }

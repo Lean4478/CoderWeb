@@ -38,6 +38,57 @@ nav a {
     background-color: aliceblue;
 }
 
+.faq {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+details {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+summary {
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+  list-style: none;
+  position: relative;
+}
+
+summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+details p {
+  padding: 0 15px 15px;
+  margin: 0;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.4s ease;
+}
+
+details[open] p {
+  opacity: 1;
+  max-height: 200px;
+}
 
 footer {
     background-color: rgb(161, 235, 70);

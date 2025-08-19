@@ -53,6 +53,11 @@ form {
 }
 
 
+footer {
+    background-color: rgb(161, 235, 70);
+    padding: 20px 0;
+}
+
 .pie-pagina {
     display: flex;
     justify-content: space-between;
