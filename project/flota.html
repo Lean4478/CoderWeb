@@ -2,153 +2,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/fleet.css">
-    <title>Semana 1 HTML</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/fleet.css">
+  <title>GOAUTO - Flota</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="icon" href="../assets/favicon.ico">
 </head>
 
 <body class="page">
-    <header>
-        <a href="../index.html">
-            <img src="../assets/logo.png" class="logo" title="Logo">
+  <header class="flex">
+    <a href="../index.html">
+      <img src="../assets/logo.png" class="logo" title="Logo">
+    </a>
+    <h1>GOAUTO</h1>
+
+    <!-- Menu en enlace relativo-->
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="flota.html">Flota</a></li>
+        <li><a href="preguntas.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--Autos y descripcion-->
+  <h2>Nuestra Flota</h2>
+
+  <section class="autos">
+    <div class="auto">
+      <img src="../assets/flota1.webp" alt="Volkswagen Suran Azul" width="640" height="360">
+      <div class="specs">
+        <h3>Volkswagen Suran – Azul</h3>
+        <ul>
+          <li>🔧 Motor: 1.6L nafta</li>
+          <li>👥 Capacidad: 5 pasajeros</li>
+          <li>🛞 Transmisión: Manual / Automática</li>
+          <li>❄️ Aire acondicionado</li>
+          <li>📦 Baúl amplio (≈450 L)</li>
+          <li>📱 Conexión Bluetooth</li>
+        </ul>
+        <button class="btn-reservar">Reservar ahora</button>
+      </div>
+    </div>
+
+    <div class="auto reverse">
+      <img src="../assets/flota2.webp" alt="Peugeot 208 Blanco" width="640" height="360">
+      <div class="specs">
+        <h3>Peugeot 208 – Blanco</h3>
+        <ul>
+          <li>🔧 Motor: 1.6L nafta</li>
+          <li>👥 Capacidad: 5 pasajeros</li>
+          <li>🛞 Transmisión: Manual / Automática</li>
+          <li>❄️ Aire acondicionado</li>
+          <li>📦 Baúl: 311 L</li>
+          <li>🎛️ Pantalla táctil, control crucero</li>
+        </ul>
+        <button class="btn-reservar">Reservar ahora</button>
+      </div>
+    </div>
+
+    <div class="auto">
+      <img src="../assets/flota3.webp" alt="Toyota Corolla Rojo" width="640" height="360">
+      <div class="specs">
+        <h3>Toyota Corolla – Rojo</h3>
+        <ul>
+          <li>🔧 Motor: 2.0L nafta</li>
+          <li>👥 Capacidad: 5 pasajeros</li>
+          <li>🛞 Transmisión: Automática CVT</li>
+          <li>❄️ Climatizador automático</li>
+          <li>📦 Baúl: 470 L</li>
+          <li>🛡️ Control de estabilidad y ABS</li>
+        </ul>
+        <button class="btn-reservar">Reservar ahora</button>
+      </div>
+    </div>
+
+    <div class="auto reverse">
+      <img src="../assets/flota4.webp" alt="Fiat Cronos" width="640" height="360">
+      <div class="specs">
+        <h3>Fiat Cronos</h3>
+        <ul>
+          <li>🔧 Motor: 1.3L nafta</li>
+          <li>👥 Capacidad: 5 pasajeros</li>
+          <li>🛞 Transmisión: Manual / Automática</li>
+          <li>❄️ Aire acondicionado</li>
+          <li>📦 Baúl: 525 L</li>
+          <li>🎯 Sensores de estacionamiento, multimedia</li>
+        </ul>
+        <button class="btn-reservar">Reservar ahora</button>
+      </div>
+    </div>
+
+    <div class="auto">
+      <img src="../assets/flota5.webp" alt="Toyota Hilux 4x4" width="640" height="360">
+      <div class="specs">
+        <h3>Toyota Hilux 4x4</h3>
+        <ul>
+          <li>🔧 Motor: 2.8L turbo diésel</li>
+          <li>👥 Capacidad: 5 pasajeros</li>
+          <li>🛞 Transmisión: Manual / Automática (6 vel.)</li>
+          <li>❄️ Climatizador automático</li>
+          <li>📦 Carga: ≈1.000 kg</li>
+          <li>🧭 Tracción integral, control de descenso</li>
+        </ul>
+        <button class="btn-reservar">Reservar ahora</button>
+      </div>
+    </div>
+
+    <div class="auto reverse">
+      <img src="../assets/flota6.webp" alt="Sedán Blanco" width="640" height="760">
+      <div class="specs">
+        <h3>Sedán Blanco</h3>
+        <ul>
+          <li>🔧 Motor: 1.6L nafta</li>
+          <li>👥 Capacidad: 5 pasajeros</li>
+          <li>🛞 Transmisión: Automática</li>
+          <li>❄️ Aire acondicionado</li>
+          <li>📦 Baúl: ≈460 L</li>
+          <li>🛰️ Pantalla táctil, asist. en pendientes</li>
+        </ul>
+        <button class="btn-reservar">Reservar ahora</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Pie de pagina -->
+
+
+  <footer>
+    <div class="pie-pagina">
+      <p>&copy; 2025 CodeHouse - Programación</p>
+
+      <div class="redes-sociales">
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="../assets/youtube.png" alt="link de youtube" title="youtube">
         </a>
-        <h1>GOAUTO</h1>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="../assets/facebook.png" alt="link de facebook" title="facebook">
+        </a>
 
-        <!-- Menu en enlace relativo-->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="flota.html">Flota</a></li>
-                <li><a href="preguntas.html">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--Autos y descripcion-->
-    <h2>Nuestra Flota</h2>
-
-<section class="autos">
-  <div class="auto">
-    <img src="../assets/flota1.webp" alt="Volkswagen Suran Azul" width="640" height="360">
-    <div class="specs">
-      <h3>Volkswagen Suran – Azul</h3>
-      <ul>
-        <li>🔧 Motor: 1.6L nafta</li>
-        <li>👥 Capacidad: 5 pasajeros</li>
-        <li>🛞 Transmisión: Manual / Automática</li>
-        <li>❄️ Aire acondicionado</li>
-        <li>📦 Baúl amplio (≈450 L)</li>
-        <li>📱 Conexión Bluetooth</li>
-      </ul>
-      <button class="btn-reservar">Reservar ahora</button>
+      </div>
     </div>
-  </div>
-
-  <div class="auto reverse">
-    <img src="../assets/flota2.webp" alt="Peugeot 208 Blanco" width="640" height="360">
-    <div class="specs">
-      <h3>Peugeot 208 – Blanco</h3>
-      <ul>
-        <li>🔧 Motor: 1.6L nafta</li>
-        <li>👥 Capacidad: 5 pasajeros</li>
-        <li>🛞 Transmisión: Manual / Automática</li>
-        <li>❄️ Aire acondicionado</li>
-        <li>📦 Baúl: 311 L</li>
-        <li>🎛️ Pantalla táctil, control crucero</li>
-      </ul>
-      <button class="btn-reservar">Reservar ahora</button>
-    </div>
-  </div>
-
-  <div class="auto">
-    <img src="../assets/flota3.webp" alt="Toyota Corolla Rojo" width="640" height="360">
-    <div class="specs">
-      <h3>Toyota Corolla – Rojo</h3>
-      <ul>
-        <li>🔧 Motor: 2.0L nafta</li>
-        <li>👥 Capacidad: 5 pasajeros</li>
-        <li>🛞 Transmisión: Automática CVT</li>
-        <li>❄️ Climatizador automático</li>
-        <li>📦 Baúl: 470 L</li>
-        <li>🛡️ Control de estabilidad y ABS</li>
-      </ul>
-      <button class="btn-reservar">Reservar ahora</button>
-    </div>
-  </div>
-
-  <div class="auto reverse">
-    <img src="../assets/flota4.webp" alt="Fiat Cronos" width="640" height="360">
-    <div class="specs">
-      <h3>Fiat Cronos</h3>
-      <ul>
-        <li>🔧 Motor: 1.3L nafta</li>
-        <li>👥 Capacidad: 5 pasajeros</li>
-        <li>🛞 Transmisión: Manual / Automática</li>
-        <li>❄️ Aire acondicionado</li>
-        <li>📦 Baúl: 525 L</li>
-        <li>🎯 Sensores de estacionamiento, multimedia</li>
-      </ul>
-      <button class="btn-reservar">Reservar ahora</button>
-    </div>
-  </div>
-
-  <div class="auto">
-    <img src="../assets/flota5.webp" alt="Toyota Hilux 4x4" width="640" height="360">
-    <div class="specs">
-      <h3>Toyota Hilux 4x4</h3>
-      <ul>
-        <li>🔧 Motor: 2.8L turbo diésel</li>
-        <li>👥 Capacidad: 5 pasajeros</li>
-        <li>🛞 Transmisión: Manual / Automática (6 vel.)</li>
-        <li>❄️ Climatizador automático</li>
-        <li>📦 Carga: ≈1.000 kg</li>
-        <li>🧭 Tracción integral, control de descenso</li>
-      </ul>
-      <button class="btn-reservar">Reservar ahora</button>
-    </div>
-  </div>
-
-  <div class="auto reverse">
-    <img src="../assets/flota6.webp" alt="Sedán Blanco" width="640" height="760">
-    <div class="specs">
-      <h3>Sedán Blanco</h3>
-      <ul>
-        <li>🔧 Motor: 1.6L nafta</li>
-        <li>👥 Capacidad: 5 pasajeros</li>
-        <li>🛞 Transmisión: Automática</li>
-        <li>❄️ Aire acondicionado</li>
-        <li>📦 Baúl: ≈460 L</li>
-        <li>🛰️ Pantalla táctil, asist. en pendientes</li>
-      </ul>
-      <button class="btn-reservar">Reservar ahora</button>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- Pie de pagina -->
-
-
-    <footer>
-        <div class="pie-pagina">
-            <p>&copy; 2025 CodeHouse - Programación</p>
-
-            <div class="redes-sociales">
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img src="../assets/youtube.png" alt="link de youtube" title="youtube">
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="../assets/facebook.png" alt="link de facebook" title="facebook">
-                </a>
-
-            </div>
-        </div>
-    </footer>
+  </footer>
 </body>
 
 </html>

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$fuente: Roboto;
+$fuente1:bebas;
+$fuente3:sans;
+$colomenu:rgb(51, 72, 92);
+$colortitulo: rgb(235, 232, 232);
+$colorprincipal: rgb(235, 232, 232);
+$colorheadrfooter:rgb(161, 235, 70);
+$colortextocajas:rgb(215, 80, 80);
+$bestlogo: 13vh;
+$hheaderfooter: 15vh;
+
+
+
+
+.page {
+    background-color: $colorprincipal;
+}
+
+header,
+footer {
+    height: $hheaderfooter;
+}
+
+.flex {
+    a {
+        .logo {
+            height: $bestlogo;
+        }
+    }
+
+    h1 {
+        font-family: $fuente;
+        color: $colomenu;
+    }
+
+    display: flex;
+    justify-content: space-around;
+    background-color: $colorheadrfooter;
+    align-items: center;
+    padding: 10px;
+
+    .menu ul {
+        display: flex;
+        list-style: none;
+
+    }
+
+    .menu a {
+        margin: 0 10px;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        background-color: $colomenu;
+        color: $colortitulo;
+    }
+}
+
+
+.historia {
+    font-family: $fuente1;
+    background-color: $colorheadrfooter;
+    color: $colomenu;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+
+    p {
+        font-size: 3.8vh;
+    }
+
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    img {
+        max-width: 90%;
+        height: auto;
+        max-height: 110vh;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+footer {
+    padding: 20px 0;
+    background-color: $colorheadrfooter;
+    color: $colomenu;
+
+    .pie-pagina {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .pie-pagina p {
+        text-align: center;
+        flex: 1;
+    }
+
+    .redes-sociales {
+        display: flex;
+        gap: 10px;
+    }
+
+    .redes-sociales img {
+        height: 5vh;
+    }
+}
+
+
+@media (max-width: 430px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    h1 {
+        display: none;
+    }
+
+    nav ul {
+        margin: 15px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    h1 {
+        margin: 20px;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    nav ul {
+        margin: 15px;
+        text-align: center;
+    }
+
+
+    footer {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 430px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      display: none; 
+    }
+
+    .menu {
+      ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+      }
+
+      a {
+        display: block;
+        margin: 5px 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .historia {
+    margin: 15px;
+    padding: 15px;
+
+    p {
+      font-size: 2.5vh;
+    }
+  }
+
+  .timeline {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  footer {
+    .pie-pagina {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+
+    h1 {
+      margin: 10px 0;
+      font-size: 4vh;
+    }
+
+    .menu ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+
+  .historia {
+    margin: 20px;
+    p {
+      font-size: 3vh;
+    }
+  }
+
+  .timeline {
+    img {
+      max-width: 95%;
+    }
+  }
+
+  footer .pie-pagina {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

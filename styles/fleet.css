@@ -1,40 +1,46 @@
-
-h1,h2  {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: #212529;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .page {
-    background-color: rgb(235, 232, 232);
-    
+  background-color: rgb(235, 232, 232);
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(161, 235, 70);
-    padding: 10px;
+header,
+footer {
+  height: 15vh;
 }
 
-.logo {
-    width: 70x;
-    height: 70px;
+.flex {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(161, 235, 70);
+  align-items: center;
+  padding: 10px;
+}
+.flex a .logo {
+  height: 13vh;
+}
+.flex h1 {
+  font-family: roboto;
+  color: rgb(51, 72, 92);
+}
+.flex .menu ul {
+  display: flex;
+  list-style: none;
+}
+.flex .menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgb(51, 72, 92);
+  color: rgb(235, 232, 232);
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-
-}
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    background-color:aliceblue;
+h2 {
+  font-family: bebas;
+  text-align: center;
+  color: rgb(51, 72, 92);
 }
 
 .autos {
@@ -43,46 +49,40 @@ nav a {
   gap: 40px;
   padding: 20px;
 }
-
-.auto {
+.autos .auto {
   display: flex;
   align-items: center;
   gap: 24px;
-}
-
-.auto.reverse {
   flex-direction: row-reverse;
 }
-
-.auto img {
+.autos .auto .reserve {
+  flex-direction: row-reverse;
+}
+.autos .auto img {
   max-width: 50%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
-
-.specs {
+.autos .auto .specs {
   flex: 1;
-  background: #f8f8f8;
-  border: 1px solid #e6e6e6;
+  background-color: rgb(161, 235, 70);
+  border: 2px solid rgb(51, 72, 92);
   border-radius: 12px;
   padding: 18px 20px;
 }
-
-.specs h3 {
+.autos .auto .specs h3 {
   margin-top: 0;
   margin-bottom: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #212529;
+  font-family: sans;
+  color: rgb(51, 72, 92);
 }
-
-.specs ul {
+.autos .auto .specs ul {
   margin: 0;
-  padding-left: 18px; 
-  list-style: none; 
+  padding-left: 18px;
+  list-style: none;
 }
-
-.specs ul li {
+.autos .auto .specs ul li {
   margin: 8px 0;
   line-height: 1.45;
   font-size: 16px;
@@ -95,47 +95,96 @@ nav a {
   padding: 10px 16px;
   font-weight: 700;
   cursor: pointer;
-  background: rgb(161, 235, 70); /* Verde GoAuto */
-  color: #2a2a2a;
-  transition: filter .2s ease;
+  background-color: rgb(235, 232, 232);
+  color: rgb(51, 72, 92);
+  transition: filter 0.2s ease;
 }
-.btn-reservar:hover { filter: brightness(0.95); }
 
+.btn-reservar:hover {
+  filter: brightness(0.95);
+}
 
 footer {
-    background-color: rgb(161, 235, 70);
-    padding: 20px 0;
+  padding: 20px 0;
+  background-color: rgb(161, 235, 70);
+  color: rgb(51, 72, 92);
+}
+footer .pie-pagina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+footer .pie-pagina p {
+  text-align: center;
+  flex: 1;
+}
+footer .redes-sociales {
+  display: flex;
+  gap: 10px;
+}
+footer .redes-sociales img {
+  height: 5vh;
 }
 
-.pie-pagina {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.pie-pagina p {
+@media (max-width: 430px) {
+  .flex {
+    flex-direction: column;
     text-align: center;
-    flex: 1;
-}
-
-.redes-sociales {
-    display: flex;
+  }
+  .flex h1 {
+    display: none;
+  }
+  .flex .menu ul {
+    flex-direction: column;
     gap: 10px;
+    padding: 0;
+  }
+  .flex .menu a {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+  }
+  .auto,
+  .auto.reverse {
+    flex-direction: column;
+  }
+  .auto img {
+    max-width: 100%;
+  }
+  .specs {
+    width: 100%;
+  }
+  footer .pie-pagina {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .flex h1 {
+    margin: 10px 0;
+    font-size: 4vh;
+  }
+  .flex .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .auto img {
+    max-width: 48%;
+  }
+  footer .pie-pagina {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
 }
 
-.redes-sociales img {
-    height: 5vh;
-}
-
-@media (max-width: 992px) {
-  .auto img { max-width: 48%; }
-}
-
-@media (max-width: 768px) {
-  .auto, .auto.reverse { flex-direction: column; }
-  .auto img { max-width: 100%; }
-  .specs { width: 100%; }
-}
+/*# sourceMappingURL=fleet.css.map */

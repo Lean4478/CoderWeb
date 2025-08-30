@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-h1,
-h2 {
-  text-align: center;
-}
-
 .page {
   background-color: rgb(235, 232, 232);
 }
@@ -34,26 +29,51 @@ footer {
   list-style: none;
 }
 .flex .menu a {
-  background-color: rgb(51, 72, 92);
   margin: 0 10px;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
+  background-color: rgb(51, 72, 92);
   color: rgb(235, 232, 232);
+}
+
+.frase {
+  font-family: Roboto;
+  background-color: rgb(215, 80, 80);
+  color: rgb(235, 232, 232);
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
 }
 
 form {
   font-family: sans;
-  font-size: 3vh;
-  text-align: center;
-  align-items: center;
   background-color: rgb(161, 235, 70);
-  padding: 15px;
-  border-radius: 3px;
-  max-width: 500px;
-  width: 100%;
-  margin: 0 auto;
   color: rgb(51, 72, 92);
+  width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+input {
+  font-family: sans;
+  width: 20vh;
+  height: 3vw;
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  width: 640px;
+  height: 360px;
+  padding: 15px;
 }
 
 footer {
@@ -92,6 +112,14 @@ footer .redes-sociales img {
   nav ul {
     margin: 15px;
   }
+  form {
+    width: 50%;
+    font-size: 16px;
+    padding: 5px;
+  }
+  video {
+    width: 400px;
+  }
   footer {
     width: 100%;
   }
@@ -112,9 +140,12 @@ footer .redes-sociales img {
   form {
     width: 500px;
   }
+  video {
+    width: 500px;
+  }
   footer {
     width: 100%;
   }
 }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=estilo.css.map */

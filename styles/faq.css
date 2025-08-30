@@ -1,163 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #212529;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .page {
-    background-color: rgb(235, 232, 232);
-
+  background-color: rgb(235, 232, 232);
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(161, 235, 70);
-    padding: 10px;
+header,
+footer {
+  height: 15vh;
 }
 
-.logo {
-    width: 70x;
-    height: 70px;
+.flex {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(161, 235, 70);
+  align-items: center;
+  padding: 10px;
 }
-
-nav ul {
-    display: flex;
-    list-style: none;
-
+.flex a .logo {
+  height: 13vh;
 }
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    background-color: aliceblue;
+.flex h1 {
+  font-family: Roboto;
+  color: rgb(51, 72, 92);
+}
+.flex .menu ul {
+  display: flex;
+  list-style: none;
+}
+.flex .menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgb(51, 72, 92);
+  color: rgb(235, 232, 232);
 }
 
 .faq {
   max-width: 700px;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: sans;
 }
-
 .faq h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-
-details {
-  background: #f8f8f8;
+.faq details {
+  background-color: rgb(161, 235, 70);
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 10px;
   overflow: hidden;
 }
-
-summary {
+.faq summary {
   cursor: pointer;
   padding: 15px;
   font-weight: bold;
   list-style: none;
   position: relative;
 }
-
-summary::after {
+.faq summary::after {
   content: "+";
   position: absolute;
   right: 20px;
   font-size: 20px;
   transition: transform 0.3s ease;
 }
-
-details[open] summary::after {
+.faq details[open] summary::after {
   transform: rotate(45deg);
 }
-
-details p {
+.faq details p {
   padding: 0 15px 15px;
   margin: 0;
   opacity: 0;
   max-height: 0;
   transition: all 0.4s ease;
 }
-
-details[open] p {
+.faq details[open] p {
   opacity: 1;
   max-height: 200px;
 }
 
 footer {
-    background-color: rgb(161, 235, 70);
-    padding: 20px 0;
+  padding: 20px 0;
+  background-color: rgb(161, 235, 70);
+  color: rgb(51, 72, 92);
 }
-
-.pie-pagina {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+footer .pie-pagina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-
-.pie-pagina p {
-    text-align: center;
-    flex: 1;
+footer .pie-pagina p {
+  text-align: center;
+  flex: 1;
 }
-
-.redes-sociales {
-    display: flex;
-    gap: 10px;
+footer .redes-sociales {
+  display: flex;
+  gap: 10px;
 }
-
-.redes-sociales img {
-    height: 5vh;
+footer .redes-sociales img {
+  height: 5vh;
 }
 
 @media (max-width: 430px) {
-    header {
-        flex-direction: column;
-        width: 100%;
-
-    }
-
-    h1 {
-        display: none;
-    }
-
-    nav ul {
-        margin: 15px;
-    }
-
-    footer {
-        width: 100%;
-    }
-
+  header {
+    flex-direction: column;
+    width: 100%;
+  }
+  h1 {
+    display: none;
+  }
+  nav ul {
+    margin: 15px;
+  }
+  footer {
+    width: 100%;
+  }
 }
-
 @media (max-width: 1024px) {
-
-    h1 {
-        margin: 20px;
-        text-align: center;
-    }
-
-    header {
-        flex-direction: column;
-        width: 100%;
-
-    }
-
-    nav ul {
-        margin: 15px;
-        text-align: center;
-    }
-
-    footer {
-        width: 100%;
-    }
+  h1 {
+    margin: 20px;
+    text-align: center;
+  }
+  header {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul {
+    margin: 15px;
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+  }
 }
+
